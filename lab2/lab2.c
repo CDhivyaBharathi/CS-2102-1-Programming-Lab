@@ -46,10 +46,11 @@ void rotateArray(int*A, int n, int rot){
     for (i=rot;i<n;i+=1){
         A[i-rot] = A[i];
     }
-    for (i=0;i<rot;i+=1){
-        memcpy(&A[n-rot],buf,rot*sizeof(int));
-        //A[n-rot+1]=buf[i]
-    }
+    // for (i=0;i<rot;i+=1){
+       
+    //     //A[n-rot+1]=buf[i]
+    // }
+    memcpy(&A[n-rot],buf,rot*sizeof(int));
 
 }
 
