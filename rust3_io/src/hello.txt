@@ -1,0 +1,1 @@
+Trying to write a file in rust
